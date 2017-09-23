@@ -46,6 +46,7 @@ function checkFieldNameRegex(fieldName) {
 
     if (['properties', 'language'].includes(fieldName)) throw new Error('fieldname is not allowed: ' + fieldName);
 
+/*
     var regexStr = '^[a-zA-Z][[a-zA-Z0-9_]*]?[a-zA-Z0-9]$';
     var regex = new RegExp(regexStr);
     if (!fieldName.match(regex)) {
@@ -54,6 +55,7 @@ function checkFieldNameRegex(fieldName) {
             fieldName: fieldName
         });
     }
+*/
 };
 
 /**
