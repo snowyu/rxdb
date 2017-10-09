@@ -46,16 +46,18 @@ function checkFieldNameRegex(fieldName) {
 
     if (['properties', 'language'].includes(fieldName)) throw new Error('fieldname is not allowed: ' + fieldName);
 
-/*
-    var regexStr = '^[a-zA-Z][[a-zA-Z0-9_]*]?[a-zA-Z0-9]$';
-    var regex = new RegExp(regexStr);
-    if (!fieldName.match(regex)) {
-        throw _rxError2['default'].newRxError('fieldnames do not match the regex', {
-            regex: regexStr,
-            fieldName: fieldName
-        });
-    }
-*/
+    /*
+        const regexStr = '^[a-zA-Z][[a-zA-Z0-9_]*]?[a-zA-Z0-9]$';
+        const regex = new RegExp(regexStr);
+        if (!fieldName.match(regex)) {
+            throw RxError.newRxError(
+                'fieldnames do not match the regex', {
+                    regex: regexStr,
+                    fieldName
+                }
+            );
+        }
+    */
 };
 
 /**
